@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+nav{
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    font-family: 'Diplomata SC', cursive;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: grey;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }   
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: grey;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+
+section{
+    height: 100vh;
+    background-color: black;
+}
+
+.about-body h1{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.body-img img{
+    width: 45%;
+    float: left;
+    border-radius: 5px;
+    margin-top: calc(((100vh - 80px) - 450px) / 2);
+    margin-left: 50px;
+}
+.text{
+    margin-left: 15px;
+    margin-top: calc(((100vh - 80px) - 250px) / 2);
+    height: fit-content;
+    color: white;
+    float: left;
+    width: 45%;
+    text-align: center;
+}
+.text p{
+    padding-top: 50px;
+    line-height: 20px;
+    font-size: 16px;
+}
+footer{
+    width: 100%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    height: 100px;
+    color: white;
+}
+footer h1{
+    font-size: 15px;
+    font-family: 'Unbounded', cursive;
+}
+.AWD{margin-top: 15px;
+    font-family: 'Diplomata SC', cursive;
+    font-size: 15px;
+}
+hr{
+    width: 100%;
+}
+@media(max-width: 1050px){
+    .body-img img{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    .body-img{
+        height: fit-content;
+    }
+    body{
+        background: black;
+    }
+    .text{
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 100px;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+}
