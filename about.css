@@ -153,6 +153,9 @@ hr{
     width: 100%;
 }
 @media(max-width: 1050px){
+    label.logo{
+        padding-right: 30px;
+    }
     .body-img img{
         width: 80%;
         margin-left: 10%;
