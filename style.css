@@ -22,7 +22,7 @@ nav{
 label.logo{
     font-family: 'Diplomata SC', cursive;
     color: white;
-    font-size: 35px;
+    font-size: 20px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
@@ -61,7 +61,6 @@ a.active,a:hover{
 }
 @media (max-width: 952px){
     label.logo{
-        font-size: 30px;
         padding-left: 50px;
     }
     nav ul li a{
