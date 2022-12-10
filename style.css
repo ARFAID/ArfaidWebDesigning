@@ -44,7 +44,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active,a:hover{
-    background: #1b9bff;
+    background: grey;
     transition: .5s;
 }
 .checkbtn{
